@@ -28,13 +28,106 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.startButton = new System.Windows.Forms.Button();
+            this.stopButton = new System.Windows.Forms.Button();
+            this.problemLabel = new System.Windows.Forms.Label();
+            this.answerTextBox = new System.Windows.Forms.TextBox();
+            this.Title = new System.Windows.Forms.Label();
+            this.highestScorelabel = new System.Windows.Forms.Label();
+            this.currentScorelabel = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // startButton
+            // 
+            this.startButton.Location = new System.Drawing.Point(85, 100);
+            this.startButton.Name = "startButton";
+            this.startButton.Size = new System.Drawing.Size(75, 23);
+            this.startButton.TabIndex = 5;
+            this.startButton.Text = "Start";
+            this.startButton.UseVisualStyleBackColor = true;
+            this.startButton.Click += new System.EventHandler(this.startButton_Click);
+            // 
+            // stopButton
+            // 
+            this.stopButton.Location = new System.Drawing.Point(166, 100);
+            this.stopButton.Name = "stopButton";
+            this.stopButton.Size = new System.Drawing.Size(75, 23);
+            this.stopButton.TabIndex = 6;
+            this.stopButton.Text = "Stop";
+            this.stopButton.UseVisualStyleBackColor = true;
+            // 
+            // problemLabel
+            // 
+            this.problemLabel.AutoSize = true;
+            this.problemLabel.Location = new System.Drawing.Point(120, 52);
+            this.problemLabel.Name = "problemLabel";
+            this.problemLabel.Size = new System.Drawing.Size(40, 13);
+            this.problemLabel.TabIndex = 7;
+            this.problemLabel.Text = "? + ? =";
+            // 
+            // answerTextBox
+            // 
+            this.answerTextBox.Location = new System.Drawing.Point(166, 49);
+            this.answerTextBox.Name = "answerTextBox";
+            this.answerTextBox.Size = new System.Drawing.Size(45, 20);
+            this.answerTextBox.TabIndex = 8;
+            // 
+            // Title
+            // 
+            this.Title.AutoSize = true;
+            this.Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.Title.Location = new System.Drawing.Point(107, 9);
+            this.Title.Name = "Title";
+            this.Title.Size = new System.Drawing.Size(133, 26);
+            this.Title.TabIndex = 9;
+            this.Title.Text = "Quick Maths";
+            // 
+            // highestScorelabel
+            // 
+            this.highestScorelabel.AutoSize = true;
+            this.highestScorelabel.Location = new System.Drawing.Point(66, 74);
+            this.highestScorelabel.Name = "highestScorelabel";
+            this.highestScorelabel.Size = new System.Drawing.Size(77, 13);
+            this.highestScorelabel.TabIndex = 10;
+            this.highestScorelabel.Text = "Highest Score:";
+            // 
+            // currentScorelabel
+            // 
+            this.currentScorelabel.AutoSize = true;
+            this.currentScorelabel.Location = new System.Drawing.Point(163, 74);
+            this.currentScorelabel.Name = "currentScorelabel";
+            this.currentScorelabel.Size = new System.Drawing.Size(78, 13);
+            this.currentScorelabel.TabIndex = 11;
+            this.currentScorelabel.Text = "Current Score: ";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(329, 143);
+            this.Controls.Add(this.currentScorelabel);
+            this.Controls.Add(this.highestScorelabel);
+            this.Controls.Add(this.Title);
+            this.Controls.Add(this.answerTextBox);
+            this.Controls.Add(this.problemLabel);
+            this.Controls.Add(this.stopButton);
+            this.Controls.Add(this.startButton);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+        private System.Windows.Forms.Button startButton;
+        private System.Windows.Forms.Button stopButton;
+        private System.Windows.Forms.Label problemLabel;
+        private System.Windows.Forms.TextBox answerTextBox;
+        private System.Windows.Forms.Label Title;
+        private System.Windows.Forms.Label highestScorelabel;
+        private System.Windows.Forms.Label currentScorelabel;
     }
 }
 
