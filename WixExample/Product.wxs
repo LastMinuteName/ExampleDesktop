@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="*" Name="ExampleDesktop" Language="1033" Version="1.0.0.0" Manufacturer="Kelvin Tsui" UpgradeCode="54afd539-fcac-4d42-b0d8-69e20bdad093">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate EmbedCab="yes" />
+
+		<Feature Id="ProductFeature" Title="WixExample" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+		</Feature>
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLFOLDER" Name="ExampleDesktop" />
+			</Directory>
+		</Directory>
+	</Fragment>
+
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+      <Component Id="ExampleDesktop.exe" Guid="0FCAE72C-893E-4DB4-A0DE-6A1F8F333088" >
+        <File Id="ExampleDesktop.exe" Name="ExampleDesktop.exe" Source="$(var.ExampleDesktop.TargetDir)ExampleDesktop.exe"></File>
+      </Component>
+		</ComponentGroup>
+	</Fragment>
+</Wix>
