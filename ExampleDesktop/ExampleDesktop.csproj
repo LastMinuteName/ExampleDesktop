@@ -100,6 +100,10 @@
       <Project>{c80104bc-2c71-40a3-a481-1b7d103d3eab}</Project>
       <Name>Calculation</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Evaluator\Evaluator.csproj">
+      <Project>{ceabddae-30cc-4033-b08c-3038f62e9d91}</Project>
+      <Name>Evaluator</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

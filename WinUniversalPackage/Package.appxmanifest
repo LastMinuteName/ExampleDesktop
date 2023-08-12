@@ -9,10 +9,10 @@
   <Identity
     Name="f63c801f-1551-4de5-b0ef-3f428aedc925"
     Publisher="CN=Kelvin"
-    Version="1.0.2.0" />
+    Version="1.0.5.0" />
 
   <Properties>
-    <DisplayName>WinUniversalPackage</DisplayName>
+    <DisplayName>QuickMaths</DisplayName>
     <PublisherDisplayName>Kelvin</PublisherDisplayName>
     <Logo>Images\StoreLogo.png</Logo>
   </Properties>
@@ -31,7 +31,7 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="$targetentrypoint$">
       <uap:VisualElements
-        DisplayName="WinUniversalPackage"
+        DisplayName="Quickmaths"
         Description="WinUniversalPackage"
         BackgroundColor="transparent"
         Square150x150Logo="Images\Square150x150Logo.png"
