@@ -22,6 +22,22 @@
     <Compile Include="Product.wxs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Calculation\Calculation.csproj">
+      <Name>Calculation</Name>
+      <Project>{c80104bc-2c71-40a3-a481-1b7d103d3eab}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\Evaluator\Evaluator.csproj">
+      <Name>Evaluator</Name>
+      <Project>{ceabddae-30cc-4033-b08c-3038f62e9d91}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
     <ProjectReference Include="..\ExampleDesktop\ExampleDesktop.csproj">
       <Name>ExampleDesktop</Name>
       <Project>{e01eeb83-dfc6-4e3f-8d6c-1b888c59ed2e}</Project>
